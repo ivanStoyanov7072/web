@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-size:1.25rem;
+    font-weight:300;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+h1,
+h2,
+h3 {
+    font-weight:400;
+    color:darkblue;
+    text-transform:capitalize;
+}
+/* Typography */
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+nav a {
+    text-decoration: none;
+    padding:0 20px;
+}
+nav a:hover {
+    background:magenta;
+}
+a:hover,
+a:focus {
+    color:rgb(99, 14, 112);
+}
+/* logo subtitle */
+.subtitle {
+    font-size: .77rem;
+    color:blue;
+    font-weight: 700;
+    text-transform:uppercase;
+    letter-spacing:5px;
+    margin: 0;
+}
+.article-title {
+font-size: 1.5rem; 
+}
+.article-read-more,
+.article-info {
+    font-size:.88;
+}
+.article-read-more {
+    text-decoration:none;
+    color:blue;
+    font-weight:700;
+    display:block;
+    border-right:4px solid darkblue;
+}
+.article-read-more:hover,
+.article-read-more:focus {
+    text-decoration:underline;
+}
+/* Layout */ 
+.container {
+    /* 
+    max width container
+    if (900px < container ) {
+         width 90% and margin offset auto 10% / 2
+     }
+     */
+     max-width: 900px;
+     width: 90%;
+     margin:0 auto;
+}
+.container-flex {
+    display:flex;
+    justify-content:space-between;
+    padding:2rem 0;
+}
+header {
+    text-align:center;
+    background:grey;
+}
+main {
+    width:75%;
+}
+article {
+    border-bottom:4px solid blue;
+    margin:10px 0;
+}
+aside {
+    width:20%;
+}
+.sidebar-widget h1 {
+    margin: 1.5rem 0;
+}
+footer {
+    background:darkblue;
+    color:whitesmoke;
+    text-align:center;
+    padding:2em 0;
+}
+footer p {
+    font-size:2rem;
+}
+/* navigation bar */
+nav ul {
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    text-transform: capitalize;
+}
+@media (max-width: 650px) {
+    .container-flex{
+        flex-direction:column;
+        padding:0;
+    }
+    nav, ul, li {
+        margin:0;
+    }
+    .subtitle {
+        display:none
+    }
+    header {
+        top:0;
+        position:sticky;
+        opacity:.8;
+    }
+    h1 {
+        font-size:1.5rem;
+    }
+    main {
+        width:auto;
+    }
+    aside {
+        width:auto;
+    }
+}
+
